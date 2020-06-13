@@ -1,0 +1,26 @@
+{
+    "name": "jmartz-gmbh/lumen-controller-news",
+    "description": "Php Lumen News Controller",
+    "require": {
+        "php": "^7.3|^7.4",
+        "illuminate/http": "^7.3.0",
+        "illuminate/support": "^7.3.0",
+        "illuminate/database": "^7.3.0",
+        "jonathan-martz/lumen-controller": "dev-master",
+        "jmartz-gmbh/lumen-migration-news": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "controller/",
+            "providers/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jonathan Martz",
+            "email": "composer@jmartz.de",
+            "homepage": "https://www.jmartz.de",
+            "role": "Developer"
+        }
+    ]
+}

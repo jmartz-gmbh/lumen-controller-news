@@ -28,13 +28,7 @@ class NewsController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function view(Request $request){
-        $validator = Validator::make($request->all(), [
-            'id' => 'required|integer'
-        ]);
-
-        $id = $request->input('id');
-
+    public function view(Request $request, int $id){
         $page = DB::table('news')
             ->where('id','=',$id);
 

@@ -44,7 +44,7 @@ class NewsController extends Controller
             $this->addData('page',$page->first());
         }
         else{
-            $this->addMessage('success','Page doesnt exists.');
+            $this->addMessage('success','News doesnt exists.');
         }
 
         return $this->getResponse();

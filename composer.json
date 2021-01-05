@@ -2,10 +2,10 @@
     "name": "jmartz-gmbh/lumen-controller-news",
     "description": "Php Lumen News Controller",
     "require": {
-        "php": "^7.3|^7.4",
-        "illuminate/http": "^7.3.0",
-        "illuminate/support": "^7.3.0",
-        "illuminate/database": "^7.3.0",
+        "php": "^7.3|^7.4|^8.0",
+        "illuminate/http": "^7.3.0|^8.0",
+        "illuminate/support": "^7.3.0|^8.0",
+        "illuminate/database": "^7.3.0|^8.0",
         "jonathan-martz/lumen-controller": "dev-master",
         "jmartz-gmbh/lumen-migration-news": "dev-master"
     },

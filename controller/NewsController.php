@@ -12,7 +12,7 @@ class NewsController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function select(Request $request){
+    public function all(Request $request){
         $connection = DB::table('news');
 
         $news = $connection->get();

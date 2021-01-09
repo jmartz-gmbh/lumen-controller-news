@@ -28,13 +28,13 @@ class NewsController extends Controller
      * @return Response
      */
     public function view(Request $request, int $id){
-        $page = DB::table('news')
+        $news = DB::table('news')
             ->where('id','=',$id);
 
-        $count = $page->count();
+        $count = $news->count();
 
         if($count === 1){
-            $this->addData('page',$page->first());
+            $this->addData('news',$news->first());
         }
         else{
             $this->addMessage('success','News doesnt exists.');

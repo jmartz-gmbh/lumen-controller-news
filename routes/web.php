@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/news/view/{id}', [
+Route::get('/news/id/{id}', [
     'middleware' => [],
     'uses' => 'App\Http\Controllers\NewsController@id'
 ]);
 
-Route::get('/news/{key}', [
+Route::get('/news/key/{key}', [
     'middleware' => [],
     'uses' => 'App\Http\Controllers\NewsController@key'
 ]);

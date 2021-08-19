@@ -12,7 +12,7 @@ Route::get('/news/key/{key}', [
     'uses' => 'App\Http\Controllers\NewsController@key'
 ]);
 
-Route::get('/news/all', [
+Route::get('/news/latest', [
     'middleware' => [],
-    'uses' => 'App\Http\Controllers\NewsController@all'
+    'uses' => 'App\Http\Controllers\NewsController@latest'
 ]);

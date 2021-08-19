@@ -12,10 +12,10 @@ class NewsController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function all(Request $request){
+    public function latest(Request $request){
         $connection = DB::table('news');
 
-        $news = $connection->get();
+        $news = $connection->orderBy('id', 'desc')->select(['id'])->get();
 
         $this->addData('news',$news);
         $this->addMessage('success','All your News.');
